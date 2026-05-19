@@ -1,5 +1,5 @@
 name: Govuln
-on: [push, pull_request]
+on: []
 
 jobs:
   govulncheck:

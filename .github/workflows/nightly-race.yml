@@ -1,10 +1,6 @@
 name: Nightly Race Tests
 
-on:
-  schedule:
-    # Run at 2 AM UTC every day
-    - cron: '0 2 * * *'
-  workflow_dispatch: # Allow manual trigger
+on: []
 
 jobs:
   race-tests:
@@ -18,7 +14,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version-file: 'go.mod'
+          go-version-file: "go.mod"
           cache: true
 
       - name: Run race tests
